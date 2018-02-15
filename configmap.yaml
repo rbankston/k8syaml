@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  namespace: default
+  name: configmap
+data:
+  config: |
+    address-pools:
+    - name: my-ip-space
+      protocol: arp
+      cidr:
+      - 10.0.1.220/28
